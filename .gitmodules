@@ -1,0 +1,9 @@
+[submodule "magnum-examples"]
+	path = magnum-examples
+	url = git@github.com:AndySomogyi/magnum-examples.git
+[submodule "magnum"]
+	path = magnum
+	url = git@github.com:AndySomogyi/magnum.git
+[submodule "corrade"]
+	path = corrade
+	url = git@github.com:AndySomogyi/corrade.git
