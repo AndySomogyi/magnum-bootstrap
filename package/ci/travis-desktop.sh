@@ -45,5 +45,7 @@ cmake .. \
     -DCMAKE_PREFIX_PATH="$HOME/deps;$HOME/sdl2;$HOME/glfw" \
     -DCMAKE_INSTALL_PREFIX=$HOME/deps \
     -DCMAKE_INSTALL_RPATH=$HOME/deps/lib \
+    `# needed only for Qt in the base-qt bootstrap project` \
+    -DCMAKE_PREFIX_PATH=/usr/local/opt/qt \
     -DCMAKE_BUILD_TYPE=Release
 make -j
