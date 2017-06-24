@@ -2,156 +2,156 @@
 
 matrix:
   include:
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=base
-    - EXTRA="-DWITH_SDL2APPLICATION=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-        - libsdl2-dev
-  - language: cpp
-    os: osx
-    compiler: clang
-    env:
-    - BRANCH=base
-    - EXTRA="-DWITH_SDL2APPLICATION=ON"
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=base-glfw
-    - EXTRA="-DWITH_GLFWAPPLICATION=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-        - libxrandr-dev
-        - libxinerama-dev
-        - libxcursor-dev
-        #- libxi-dev # will be needed in the future
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=base-glut
-    - EXTRA="-DWITH_GLUTAPPLICATION=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-        - freeglut3-dev
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=base
+    #- EXTRA="-DWITH_SDL2APPLICATION=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+        #- libsdl2-dev
+  #- language: cpp
+    #os: osx
+    #compiler: clang
+    #env:
+    #- BRANCH=base
+    #- EXTRA="-DWITH_SDL2APPLICATION=ON"
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=base-glfw
+    #- EXTRA="-DWITH_GLFWAPPLICATION=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+        #- libxrandr-dev
+        #- libxinerama-dev
+        #- libxcursor-dev
+        ##- libxi-dev # will be needed in the future
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=base-glut
+    #- EXTRA="-DWITH_GLUTAPPLICATION=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+        #- freeglut3-dev
   - language: cpp
     os: osx
     compiler: clang
     env:
     - BRANCH=base-qt
     - EXTRA="-DWITH_GLXCONTEXT=ON"
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=windowless
-    - EXTRA="-DWITH_WINDOWLESSGLXAPPLICATION=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-  - language: cpp
-    os: osx
-    compiler: clang
-    env:
-    - BRANCH=windowless
-    - EXTRA="-DWITH_WINDOWLESSCGLAPPLICATION=ON"
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=scenegraph2D
-    - EXTRA="-DWITH_SDL2APPLICATION=ON -DWITH_SCENEGRAPH=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-        - libsdl2-dev
-  - language: cpp
-    os: linux
-    dist: trusty
-    compiler: gcc
-    env:
-    - BRANCH=scenegraph3D
-    - EXTRA="-DWITH_SDL2APPLICATION=ON -DWITH_SCENEGRAPH=ON"
-    addons:
-      apt:
-        packages:
-        - libgl1-mesa-dev
-        - libsdl2-dev
-  - language: cpp
-    os: osx
-    osx_image: xcode7.3
-    env:
-    - BRANCH=base-ios
-    - TARGET_GLES2=ON
-  - language: cpp
-    os: osx
-    osx_image: xcode7.3
-    env:
-    - BRANCH=base-ios
-    - TARGET_GLES2=OFF
-  - language: cpp
-    os: osx
-    osx_image: xcode7.3
-    env:
-    - BRANCH=base-emscripten
-    - TARGET_GLES2=ON
-  - language: cpp
-    os: osx
-    osx_image: xcode7.3
-    env:
-    - BRANCH=base-emscripten
-    - TARGET_GLES2=OFF
-  - language: android
-    os: linux
-    dist: precise
-    env:
-    - BRANCH=base-android
-    - TARGET_GLES2=ON
-    addons:
-      apt:
-        sources:
-        - ubuntu-toolchain-r-test
-        packages:
-        - g++-4.7
-    android:
-      components:
-      - build-tools-19.0.0
-      - android-19
-      - sys-img-armeabi-v7a-android-19
-  - language: android
-    os: linux
-    dist: precise
-    env:
-    - BRANCH=base-android
-    - TARGET_GLES2=OFF
-    addons:
-      apt:
-        sources:
-        - ubuntu-toolchain-r-test
-        packages:
-        - g++-4.7
-    android:
-      components:
-      - build-tools-19.0.0
-      - android-19
-      - sys-img-armeabi-v7a-android-19
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=windowless
+    #- EXTRA="-DWITH_WINDOWLESSGLXAPPLICATION=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+  #- language: cpp
+    #os: osx
+    #compiler: clang
+    #env:
+    #- BRANCH=windowless
+    #- EXTRA="-DWITH_WINDOWLESSCGLAPPLICATION=ON"
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=scenegraph2D
+    #- EXTRA="-DWITH_SDL2APPLICATION=ON -DWITH_SCENEGRAPH=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+        #- libsdl2-dev
+  #- language: cpp
+    #os: linux
+    #dist: trusty
+    #compiler: gcc
+    #env:
+    #- BRANCH=scenegraph3D
+    #- EXTRA="-DWITH_SDL2APPLICATION=ON -DWITH_SCENEGRAPH=ON"
+    #addons:
+      #apt:
+        #packages:
+        #- libgl1-mesa-dev
+        #- libsdl2-dev
+  #- language: cpp
+    #os: osx
+    #osx_image: xcode7.3
+    #env:
+    #- BRANCH=base-ios
+    #- TARGET_GLES2=ON
+  #- language: cpp
+    #os: osx
+    #osx_image: xcode7.3
+    #env:
+    #- BRANCH=base-ios
+    #- TARGET_GLES2=OFF
+  #- language: cpp
+    #os: osx
+    #osx_image: xcode7.3
+    #env:
+    #- BRANCH=base-emscripten
+    #- TARGET_GLES2=ON
+  #- language: cpp
+    #os: osx
+    #osx_image: xcode7.3
+    #env:
+    #- BRANCH=base-emscripten
+    #- TARGET_GLES2=OFF
+  #- language: android
+    #os: linux
+    #dist: precise
+    #env:
+    #- BRANCH=base-android
+    #- TARGET_GLES2=ON
+    #addons:
+      #apt:
+        #sources:
+        #- ubuntu-toolchain-r-test
+        #packages:
+        #- g++-4.7
+    #android:
+      #components:
+      #- build-tools-19.0.0
+      #- android-19
+      #- sys-img-armeabi-v7a-android-19
+  #- language: android
+    #os: linux
+    #dist: precise
+    #env:
+    #- BRANCH=base-android
+    #- TARGET_GLES2=OFF
+    #addons:
+      #apt:
+        #sources:
+        #- ubuntu-toolchain-r-test
+        #packages:
+        #- g++-4.7
+    #android:
+      #components:
+      #- build-tools-19.0.0
+      #- android-19
+      #- sys-img-armeabi-v7a-android-19
 
 notifications:
   webhooks:
