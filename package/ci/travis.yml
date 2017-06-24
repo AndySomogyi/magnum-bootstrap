@@ -52,7 +52,7 @@ matrix:
     compiler: clang
     env:
     - BRANCH=base-qt
-    - EXTRA="-DWITH_GLXCONTEXT=ON"
+    - EXTRA="-DWITH_CGLCONTEXT=ON"
   #- language: cpp
     #os: linux
     #dist: trusty
